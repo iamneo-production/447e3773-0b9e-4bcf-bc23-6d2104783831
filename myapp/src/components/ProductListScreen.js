@@ -4,6 +4,21 @@ import axios from 'axios'; // For API calls
 
 const ProductListScreen = () => {
   const [products, setProducts] = useState([]);
+  const [pro] = useState([
+    {
+      id: 1,
+      title: 'Product 1',
+      price: 29.99,
+      image: 'path/to/image1.jpg'
+    },
+    {
+      id: 2,
+      title: 'Product 2',
+      price: 39.99,
+      image: 'path/to/image2.jpg'
+    },
+   
+  ]);
   const [categories, setCategories] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All');
 
